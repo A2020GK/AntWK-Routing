@@ -1,0 +1,20 @@
+{
+    "name": "antwk/routing",
+    "description": "Routing module for AntWebKernel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Antwk\\Routing\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antony",
+            "email": "a2020gk@outlook.com"
+        }
+    ],
+    "require": {
+        "antwk/http": "^1.0"
+    }
+}
