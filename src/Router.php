@@ -104,7 +104,7 @@ class Router
     {
         foreach ($this->routes as $n => $r) {
             $pathMatch = preg_match($r->compiledPath, $path, $matches);
-            $methodMatch = $r->method === $method or $r->method == "any";
+            $methodMatch = ($r->method == $method) || ($r->method == "any");
 
             if ($pathMatch && $methodMatch && $r->enabled) {
                 $args = array_intersect_key($matches, array_flip(array_filter(array_keys($matches), "is_string")));
